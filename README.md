@@ -8,7 +8,7 @@ Inspired by the awesome visualizations about MTA Turnstile Data from [Chris Whon
 
 In the gif below, you can see an 'animated' leaflet map that shows whether or not a lot of people are entering a metro station in NYC at different times of the week from 02-23-2019 to 03-01-2019. The data source contains more specific time stamps and you can see the changes of the number of people entering different station at different hours of the day. The data can be found [here](http://web.mta.info/developers/).
 
-![](screenshots/MTA.gif)
+![](MTA.gif)
 
 ## Vis insights:
 
