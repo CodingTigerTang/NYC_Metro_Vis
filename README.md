@@ -1,6 +1,6 @@
 # Animated NYC metro traffic
 
-Wonder what one week of metro traffic would look like? Wanna see the heaviest/lightest traffic times for your NYC metro stops? Check out this app below.
+Wonder what one week of metro traffic would look like? Wanna see the heaviest/lightest traffic times for your NYC metro stops? Check out this app [here](https://tiger-tang.shinyapps.io/NYC_MTA/).
 
 ## Background 
 
