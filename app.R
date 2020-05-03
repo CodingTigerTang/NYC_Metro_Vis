@@ -34,9 +34,10 @@ server <- function(input, output) {
   # utilizing promises to handle new data download and manipulation --------
   
   observeEvent(input$refresh, {
+    future({  
     data_station <- read_rds("data/cache_coordinate.rds")
+  
     data3 <- read_csv("http://web.mta.info/developers/data/nyct/turnstile/turnstile_190302.txt")
-    
     
     all <- inner_join(data_station %>% 
                         mutate(`Station Name`= toupper(`Station Name`)),data3,by=c("Station Name"="STATION","Division"="DIVISION")) %>% 
@@ -59,6 +60,7 @@ server <- function(input, output) {
       )) %>% ungroup()
     
     saveRDS(all_clean, "data/cache_all_data.rds")
+    })
     
   })  
   
